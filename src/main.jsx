@@ -1,42 +1,22 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import Encabezado from "./Encabezado";
+import Contenido from "./Contenido";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <header className="encabezado">
-      <section className="logotipo"></section>
-      <nav className="menu">
-        <a href="">Enlace</a>
-        <a href="">Enlace</a>
-        <a href="">Enlace</a>
-        <a href="">Enlace</a>
-        <a href="">Enlace</a>
-      </nav>
-    </header>
+    <Encabezado />
     <div className="contenido">
-      <main>
-        <h1>Galería de Imágenes</h1>
-        <div>
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-        </div>
-      </main>
-      <div>
-        <section>
+      <Contenido />
+      <section>
+        <article>
           <h2>Título de contenido</h2>
-        </section>
-        <section>
+        </article>
+        <article>
           <h2>Título de contenido</h2>
-        </section>
-      </div>
+        </article>
+      </section>
     </div>
   </StrictMode>
 );
